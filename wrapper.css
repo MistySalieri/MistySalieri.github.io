@@ -1,0 +1,22 @@
+/* CSS Centering Code with the h2 Selector "*" */
+
+h1 {
+    text-align: center;
+}
+
+#col {
+    background-color: mediumpurple;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Styling */
+
+body {
+    margin: auto;
+    background: url(img/eye.jpg);
+    color: ghostwhite;
+    width: 700px;
+    padding: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+}
