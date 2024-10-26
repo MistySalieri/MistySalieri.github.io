@@ -32,7 +32,16 @@ body {
 <div id="example2">
 <h1 style="color:chocolate">Manada Golosa</h1>
     
-<audio src="/music/plok_beach.mp3" loop autoplay hidden></audio>
+<audio src="/music/plok_beach.mp3" loop hidden></audio>
+        <script>
+        // Attempt to play audio on page load
+        window.addEventListener('load', function() {
+            const audio = document.getElementById('background-audio');
+            audio.play().catch(error => {
+                console.log('Autoplay prevented: ' + error);
+            });
+        });
+    </script>
     
 <p> This is a test of Root Directory ONE, which should be superior!! ;3 </p>
 <img src="img/catgirl-come-on.gif" title="failed experuiment" width="600" height="450" />
